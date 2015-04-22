@@ -1,0 +1,94 @@
+#N canvas 7 22 717 690 10;
+#X obj 12 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -159808 -1
+-1;
+#X obj 229 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 274 281 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 190 141 r A2B;
+#X obj 234 141 r C2B;
+#X msg 229 309 1;
+#X msg 190 179 set \$1;
+#X msg 190 216 0;
+#X obj 190 248 select 0 1 2;
+#X obj 190 283 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 86 281 r 1to0B;
+#X obj 86 258 s 1to0B;
+#X msg 86 235 0;
+#X obj 86 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 80 437 readsf~;
+#X obj 71 470 dac~;
+#X obj 338 565 readsf~;
+#X obj 329 598 dac~;
+#X text 48 25 Are you sure you want B? Try A/C?;
+#X text 49 51 Beeeeeee... Any Commends? Press C;
+#X obj 190 336 s B2A;
+#X msg 190 309 1;
+#X msg 274 310 2;
+#X obj 31 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -257985
+-257985;
+#X obj 31 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -257985
+-257985;
+#X obj 229 336 s B2CC;
+#X obj 274 337 s B2CCC;
+#X floatatom 386 374 5 0 0 0 - - -;
+#X obj 384 316 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 385 342 counter 0 1 3;
+#X obj 386 411 select 1 2 3;
+#X obj 515 437 readsf~;
+#X obj 506 470 dac~;
+#X obj 387 454 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 515 376 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 31 75 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -257985
+-257985;
+#X text 49 69 What about A???? You sure you don't want A???;
+#X msg 80 393 open B01.wav \, start;
+#X msg 339 527 open B02.wav \, start;
+#X msg 515 399 open B03.wav \, start;
+#X connect 0 0 7 0;
+#X connect 1 0 5 0;
+#X connect 1 0 28 0;
+#X connect 2 0 22 0;
+#X connect 2 0 28 0;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 5 0 25 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 13 0;
+#X connect 8 0 9 0;
+#X connect 8 1 1 0;
+#X connect 8 2 2 0;
+#X connect 9 0 21 0;
+#X connect 9 0 37 0;
+#X connect 10 0 6 0;
+#X connect 12 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 15 0;
+#X connect 14 0 15 1;
+#X connect 16 0 17 0;
+#X connect 16 0 17 1;
+#X connect 21 0 20 0;
+#X connect 22 0 26 0;
+#X connect 27 0 30 0;
+#X connect 28 0 29 0;
+#X connect 29 0 27 0;
+#X connect 30 0 33 0;
+#X connect 30 1 33 0;
+#X connect 30 2 34 0;
+#X connect 30 2 35 0;
+#X connect 31 0 32 0;
+#X connect 31 0 32 1;
+#X connect 33 0 38 0;
+#X connect 34 0 39 0;
+#X connect 37 0 14 0;
+#X connect 37 0 23 0;
+#X connect 38 0 16 0;
+#X connect 38 0 24 0;
+#X connect 39 0 31 0;
+#X coords 0 -1 1 1 330 90 2 10 10;
